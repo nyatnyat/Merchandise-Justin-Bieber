@@ -1,0 +1,184 @@
+/*Signup*/
+/* Global Styles */
+body {
+    font-family: 'DM Serif Text', serif; /* Menggunakan font DM Serif Text */
+    margin: 0;
+    padding: 0;
+    background-image: url('banner\ ;;\ Justin\ Bieber.jpg'); /* Ganti dengan gambar latar belakang yang diinginkan */
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+    overflow: hidden;
+}
+
+/* Header / Navbar Styles */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 3rem; /* Membesarkan ukuran logo */
+    font-weight: bold;
+    color: #ff6f61;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Menambahkan bayangan untuk meningkatkan kontras */
+}
+
+header nav {
+    display: flex;
+    gap: 30px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem; /* Menambah ukuran font pada menu */
+    font-weight: 500;
+    transition: color 0.3s ease;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Menambahkan bayangan pada menu */
+}
+
+header nav a:hover {
+    color: #ff6f61;
+    text-decoration: underline;
+}
+
+/* Signup Section */
+#signup {
+    background: rgba(0, 0, 0, 0.8); /* Mengurangi transparansi latar belakang agar teks lebih kontras */
+    backdrop-filter: blur(5px);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 350px; /* Menyesuaikan ukuran login form agar lebih kecil */
+    text-align: center;
+    animation: slide-up 0.5s ease-out;
+    margin-top: 80px; /* Memberikan jarak antara login form dan navbar */
+}
+
+#signup h2 {
+    font-size: 2.8rem; /* Membesarkan ukuran judul */
+    font-weight: 600;
+    color: #ff6f61;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Menambahkan bayangan pada teks judul */
+}
+
+/* Input Fields */
+input[type="email"],
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    outline: none;
+    transition: border 0.3s ease, transform 0.3s ease;
+}
+
+input[type="email"]:focus,
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #ff6f61;
+    transform: translateY(-2px);
+    box-shadow: 0 0 10px rgba(255, 111, 97, 0.8);
+}
+
+/* Checkbox Label */
+#signupForm label {
+    display: block;
+    font-size: 1rem;
+    color: #fff;
+    text-align: left;
+    margin-top: 10px;
+}
+
+/* Button Styles */
+button {
+    padding: 5px;
+    background-color: #ff6f61;
+    color: white;
+    font-size: 1rem; /* Membesarkan ukuran font tombol */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #e65c4f;
+    transform: translateY(-4px);
+}
+
+/* Links */
+#Signup p {
+    font-size: 1rem; /* Membesarkan font pada paragraf */
+    color: #fff;
+}
+
+#Signup a {
+    text-decoration: none;
+    color: #ff6f61;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#Signup a:hover {
+    color: #e65c4f;
+}
+
+/* Footer Styles */
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Mengurangi transparansi agar teks lebih jelas */
+    color: white;
+    text-align: center;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.3);
+    border-top: 2px solid #ff6f61;
+    font-size: 1.2rem; /* Membesarkan ukuran font footer */
+    font-family: 'Arial', sans-serif; /* Tetap menggunakan font Arial di footer */
+}
+
+footer a {
+    text-decoration: none;
+    color: #ff6f61;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #e65c4f;
+}
+
+/* Animation for Slide Up Effect */
+@keyframes slide-up {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
